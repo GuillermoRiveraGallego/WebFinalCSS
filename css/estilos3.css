@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+    @media screen and ( min-width: 475px) and  (max-width: 1200px) {
+
+
+
+    }
+
+    @media screen and ( max-width: 475px) {
+
+
+
+    }
+
+  
+
+body {
+    margin: 0;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    height: 5em;
+    color: white;
+    background-color: black;
+    align-items: center;
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    z-index: 1000;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+.headerTituloYlogo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoHeader {
+    width: 5em;
+    height: 5em;
+}
+
+.tituloHeader {
+    font-size: 2em;
+    font-family: "Oswald";
+    font-weight: 600;
+}
+
+
+
+.linksHeader {
+
+    display: flex;
+    margin-right: 50px;
+}
+
+.linksHeader a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 20px;
+}
+
+.linksHeader a:hover {
+    color: #B22222;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 20px;
+}
+
+.buscadorHeader{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.buscadorHeader input[type="text"] { 
+    padding: 5px 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.logos{
+
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;  
+}
+
+.logos a{
+
+    text-decoration: none;
+}
+
+.slider{
+
+    width: 100%;
+    height: 200px;
+}
+
+
+.contenido {
+    margin-top: 90px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contenidoPrincipal{
+
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.contenidoPrincipalTitulo2{
+
+    font-size: 36px;
+    font-family: "Oswald";
+    font-weight: 600;
+}
+
+
+.contenidoPrincipalTitulo{
+
+    font-size: 36px;
+    font-family: "Oswald";
+    font-weight: 600;
+    margin-left: 370px;
+}
+
+.contenidoPrincipalImagen{
+
+    width: 700px;
+    margin-left: 20px;
+}
+
+.contenidoPrincipalImagen img {
+
+    width: 100%;
+}
+
+.textoPrincipal{
+
+    margin-right: 20px;
+    text-align: center;  
+    font-family: "Roboto", serif;
+}
+
+.contenidoPrincipalTexto2, .contenidoPrincipalTexto1{
+
+    width: 600px;
+    justify-content: center;
+    font-size: 22px;
+    color: #1C1C1C;
+    font-family: "Roboto";
+    margin-left: 20px;
+}
+
+
+
+.contenidoPrincipalTexto2{
+
+    text-align: center;
+
+}
+
+.contenidoPrincipalTexto1{
+
+    text-align: justify;
+
+}
+
+.mapa{
+    width: 700px;
+    height: 300px;
+}
+
+
+.contenidoCentralImagen img{
+
+    width: 100%;
+}
+
+.contenidoCentralImagen {
+
+    width: 700px;
+    height: 450;
+
+}
+
+.contenidoCentralTitulo{
+
+    font-size: 36px;
+    font-family: "Oswald";
+    font-weight: 600;
+    margin-left: 1120px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*seccion guantes y material deportivo*/
+
+.productos-contenedor {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.producto {
+    padding: 10px;
+    text-align: center;
+    width: 20%;
+}
+
+.producto img {
+    width: 100%;
+}
+
+.tituloGuantes{
+    font-size: 36px;
+    font-family: "Oswald";
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.contenedorTituloGuantes{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.producto .nombreGuantes{
+    font-size: 22px;
+    font-family: "Oswald";
+    font-weight: 600;
+}
+
+.producto img{
+    width: 250px;
+}
+
+
+.textoGuantesContenedor {
+    text-align: center;
+}
+
+.textoGuantes {
+    margin-top: 10px;
+    display: inline-block; 
+    text-align: justify;
+    font-family: "Roboto", serif;
+    font-size: 16px;
+    width: 80%; 
+}
+
+/*estilos nivel 3*/
+
+.cuerpoTercerNivel{
+
+    height: 100vh;        /*Ocupar altura de la ventana*/
+    flex-direction: column;
+}
+
+.contenidoPrincipalTercerNivel{
+
+    margin-top: 20px;
+    flex-grow: 1; 
+   
+}
+
+.cuerpoTercerNivel,.contenidoPrincipalTercerNivel{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contenecorTextoTercerNivel{
+
+    width: 700px;
+    text-align: center; 
+}
+
+.textoTercerNivel{
+ 
+    margin-left: 20px;
+    font-size: 22px;
+    color: #1C1C1C;
+    font-family: "Roboto";
+    text-align: justify;
+
+}
+
+.imagenTercerNivel img{
+
+    width: 100%;
+   
+}
+
+.imagenTercerNivel {
+
+    width: 500px;
+    height: 450;
+
+}
+
+.tituloTercerNivel{
+
+    font-size: 36px;
+    font-family: "Oswald";
+    font-weight: 600;
+
+}
