@@ -1,28 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
-@media screen and ( min-width: 475px) and  (max-width: 1200px) {
-
-
-
-}
-            
-@media screen and (max-width: 475px) {
-  
-
-
-
-}
-
-
     body {
         margin: 0;
     }
 
-    /*ZONA HEADER*/
+/*Pantalla ordenador Index Principal*/
 
-    header{
+@media screen and (min-width: 475px) {
+  
+    
+    /*ZONA HEADER que sera comun tanto en tablet como en ordenador*/
+
+    header {
         display: grid;
+        grid-template-columns: 1fr 3fr 2fr;
         width: 100%;
         height: 5em;
         color: white;
@@ -31,9 +23,7 @@
         top: 0; 
         left: 0;
         z-index: 1000;
-        grid-template-columns: 15% 50% 35%;
         align-items: center;
-        
     }
 
     .headerTituloYlogo{
@@ -58,20 +48,24 @@
         grid-column-start: 3;
         grid-column-end: 4;
         display: flex;
+        justify-content: space-evenly; 
+        align-items: center;
+        gap: 15px; 
+
     }
 
          .linksHeader a {
              color: white;
              text-decoration: none;
              font-size: 1rem;
-             padding: 20px;
+             
          }
          
          .linksHeader a:hover {
              color: #B22222;
              text-decoration: none;
              font-size: 1.1rem;
-             padding: 20px;
+             
          }
 
 
@@ -88,9 +82,10 @@
             outline: none;
         }
 
+}
 
-        /*ZONA FOOTER*/
-
+    /*estilos comunes en todos los tamaños*/
+    /*ZONA FOOTER */
 
     footer {
         display: grid;
@@ -134,15 +129,22 @@
         .centradoContenido{
             display: flex;
             justify-content: center;
+            max-width: 1600px;  /*en caso de quitar zoom esto que*/ 
         }
+        
 
             .contenido {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
-                margin-top: 5.6em;
+                margin-top: 2.5em;
                 width: 80%;
                 gap: 2em;
             }
+
+                .contenidoDerecha{
+                    display: flex;
+                    align-items: center;
+                }
 
                 .contenidoTitulo{
                     display: flex;
@@ -162,17 +164,323 @@
                     text-align: center;
                 }
 
-                .imagenPrincipal1, .imagenPrincipal2{
-                    width: 43.75em;
+                .imagenPrincipal1, .imagenPrincipal2, .mapa{
+                    width: 100%;
+                    max-width: 43.75em;
                 }
 
+
+
+/*Pantalla movil Index Principal*/
+
+@media screen and (max-width: 475px) {
+  
+    
+    /*header*/
+    header {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        background-color: black;
+        color: white;
+        
+    }
+
+    .headerTituloYlogo{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+         .logoHeader {
+             width: 5em;
+             height: 5em;
+         }
+        
+         .tituloHeader {
+             font-size: 2em;
+             font-family: "Oswald";
+             font-weight: 600;
+         }
+
+         .buscadorHeader{
+           display: none;
+         }
+
+
+    .linksHeader{
+
+        display: grid;
+        align-items: center;
+        gap: 15px; 
+        justify-content: center;
+
+    }
+
+         .linksHeader a {
+             color: white;
+             text-decoration: none;
+             font-size: 1rem;
+             
+         }
+        
+         .linksHeader a:hover {
+             color: #B22222;
+             text-decoration: none;
+             font-size: 1.1rem;
+             
+         }
+
+        /* footer y slider desaparecen */
+
+        footer{
+            display: none;
+        }
+
+        .slider{
+            display: none;
+        }
+
+        #segundoParrafo{
+            display: none;
+        }
+
+        /*contenido*/
+
+        .centradoContenido{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            margin-bottom: 2em;
+        }
+
+            .contenido {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(6, auto);
+                width: 90%;
+                gap: 1em;
+            }
+
+                .contenidoDerecha{
+                    display: flex;
+                    align-items: center;
+                }
+
+                .contenidoTitulo{
+                    display: flex;
+                    justify-content: center;
+                    font-size: 2em;
+                    font-family: "Oswald";
+                }
+
+                p{
+                    margin: 0.5em;
+                }
+
+                .contenidoTexto, .contenidoTextoHorarios{
+                    font-family: "Roboto", serif;
+                    text-align: justify;
+                    color: #1C1C1C;
+                    font-size: 1em;
+                }
+
+                .contenidoTextoHorarios{
+                    text-align: center;
+                }
+
+                #contenedorImagen2{
+                    
+                    grid-row-start: 4;
+                    grid-row-end: 5;
+
+                }
+
+                .imagenPrincipal1, .imagenPrincipal2, .mapa{
+                    width: 100%;
+                    
+                }
                 .mapa{
-                    width: 43.75em;
+
+                   height: 90%;
+
+                }
+              
+}
+
+/*tablet Index Principal*/
+
+@media screen and ( min-width: 475px) and  (max-width: 1200px) {
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*pantalla ordenador guantes*/
+
+    .contenedorTituloGuantes{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: 7em;
+        margin-bottom: 3em;
+    }
+
+        .tituloGuantes{
+            font-size: 35px;
+            font-family: "Oswald";
+            font-weight: 600;
+        }
+
+        
+    .contenedorGrande{
+        display:  flex;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 3em;
+        
+    }
+        .contenidoGuantes{
+
+            display: grid;
+            width: 90%;
+            grid-template-columns: repeat(4, auto);
+            
+        }
+
+        .producto{
+            display: flex;
+            flex-direction: column;
+            place-items: center;
+            text-align: center;
+
+        }
+
+            .producto img {
+
+                   max-width: 12.5em;
+                }
+
+                .textoGuantes{
+                    width: 80%;
+                    text-align: justify;
+                    font-family: "Roboto", serif;
+                    font-size: 1em;
+                }
+
+                .nombreGuantes{
+                    font-size: 1.375;
+                    font-family: "Oswald";
+                    font-weight: 600;
                 }
 
 
 
 
+/*pantalla movil guantes*/
 
+@media screen and (max-width: 475px){
+
+        .contenidoGuantes{
+
+            grid-template-columns: repeat(1, auto);
+            
+        }
+
+        .contenedorTituloGuantes{
+
+            margin-top: 1.75em;
+
+        }
+
+
+}
+
+/*tablet guantes*/
+
+@media screen and ( min-width: 475px) and  (max-width: 1200px){
+
+    .contenidoGuantes{
+
+        grid-template-columns: repeat(2, auto);
+        
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*pantalla ordenador tercer nivel*/
+
+
+.cuerpoTercerNivel{
+    height: 100vh;       
+    flex-direction: column;
+}
+
+.contenidoPrincipalTercerNivel{
+    margin-top: 20px;
+    flex-grow: 1; 
+}
+
+.cuerpoTercerNivel,.contenidoPrincipalTercerNivel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenecorTextoTercerNivel{
+    width: 700px;
+    text-align: center; 
+}
+
+.textoTercerNivel{
+    margin-left: 20px;
+    font-size: 22px;
+    color: #1C1C1C;
+    font-family: "Roboto";
+    text-align: justify;
+}
+
+.imagenTercerNivel img{
+    width: 100%; 
+}
+
+.imagenTercerNivel {
+    width: 500px;
+    height: 450;
+}
+
+.tituloTercerNivel{
+    font-size: 36px;
+    font-family: "Oswald";
+    font-weight: 600;
+}
 
 
