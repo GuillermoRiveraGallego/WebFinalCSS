@@ -7,7 +7,6 @@
 
 /*Pantalla ordenador Index Principal*/
 
-
     /*ZONA HEADER que sera comun tanto en tablet como en ordenador*/
 
     header {
@@ -454,7 +453,7 @@
 
         .contenedorTituloGuantes{
 
-            margin-top: 1.25em;
+            margin-top: 8.25em;
 
         }
 
@@ -491,8 +490,8 @@
 
 
 
-/*pantalla ordenador tercer nivel*/
 
+/*pantalla ordenador tercer nivel*/
 
 .cuerpoTercerNivel{
 
@@ -542,69 +541,45 @@
 }
 
 
+
+
+
+.imagenTercerNivelAux{
+    display: none;
+}
+
+
 /*movil ordenador guantes*/
 @media screen and (max-width: 475px){
 
+    .imagenTercerNivel{
+        display: none;
+    }
+
+    .imagenTercerNivelAux{
+        display: block;
+        width: 100%;
+    }
+
+    .imagenTercerNivelAux img{
+       width: 80%;
+    }
+
     .cuerpoTercerNivel{
-        display: grid;
-        grid-template-rows: 1fr;   
+        width: 100%;
+        display: flex;
+        justify-content: center;  
         place-items: center;
         text-align: center; 
+        margin-top: 7em;
     }
 
     .contenidoPrincipalTercerNivel{
-        display: grid;
-        width: 70%;
-        grid-template-columns: 1fr;
-        grid-template-rows: 2fr;
+        display: flex;
         align-items: center;
         text-align: center;
+        justify-content: center;
     }
-    .contenedorTextoTercerNivel{
-
-        display: grid;
-        width: 70%;
-        grid-template-columns: 1fr;
-        grid-template-rows: 2fr;
-        align-items: center;
-        text-align: center;
-    }
-/*
-.imagenTercerNivel img{
-
-    width: 80%;
-}
-
-.textoTercerNivel{
-
-    font-size: 1.375em;
-    color: #1C1C1C;
-    font-family: "Roboto";
-    text-align: justify;
-}
-
-.tituloTercerNivel{
-    font-size: 2.25em;
-    font-family: "Oswald";
-    font-weight: 600;
-}
-
-.botonVolver{
-    display: flex;
-    width: 100%;
-    justify-content: right;
-}
-
-.botonVolver a{
-
-    text-decoration: none;
-    font-size: 1.5em;
-    font-family: "Oswald";
-    font-weight: 600;
-
-}
-
-*/
     
 }
 
