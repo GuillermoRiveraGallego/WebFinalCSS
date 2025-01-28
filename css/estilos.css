@@ -436,6 +436,12 @@
                     font-family: "Oswald";
                     font-weight: 600;
                 }
+    
+    /*botones de guantes siguiente*/
+
+    .botonesPantalla{
+        display: none;
+    }
 
 
 
@@ -444,18 +450,47 @@
 
 @media screen and (max-width: 475px){
 
+
+    .contenedorGrande{
+
+        display: grid;
+        grid-template-columns: 1fr 8fr 1fr;
+        align-items: center;
+       
+    }
+
+        .botonesPantalla{
+
+            display: flex;
+            width: 90%;
+            height: 20%;
+            align-items: center;
+            justify-content: center;
+
+        }
+
         .contenidoGuantes{
 
+            display: grid;
             grid-template-columns: repeat(1, auto);
-            
+            width: 100%;
+            justify-content: center;
+
         }
 
         .contenedorTituloGuantes{
 
-            margin-top: 8.25em;
+            margin-top: 6.25em;
 
         }
 
+        .botonesPantalla{
+            display: flex;
+        }
+
+        #productoOcultar{
+            display: none;
+        }
 
 }
 
@@ -467,6 +502,10 @@
 
         grid-template-columns: repeat(2, auto);
         
+    }
+
+    .botonesPantalla{
+        display: none;
     }
 
 }
@@ -564,9 +603,8 @@
 
     .cuerpoTercerNivel{
         width: 100%;
-        display: flex;
         justify-content: center;  
-        margin-top: 7em;
+        margin-top: 4em;
     }
 
     .contenidoPrincipalTercerNivel{
