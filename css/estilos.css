@@ -2,6 +2,10 @@
 
     body {
         margin: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
     }
 
 /*Pantalla ordenador Index Principal*/
@@ -370,15 +374,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
 /*pantalla ordenador guantes*/
 
     .contenedorTituloGuantes{
@@ -511,30 +506,11 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*pantalla ordenador tercer nivel*/
 
 .cuerpoTercerNivel{
 
     display: grid;
-    height: 100vh;
     grid-template-rows: 1fr;   
     place-items: center;
     text-align: center; 
@@ -578,11 +554,20 @@
     font-weight: 600;
 }
 
-
-
 .imagenTercerNivelAux{
     display: none;
 }
+
+/*necesario para el ordenador*/
+
+@media screen and (min-width: 1200px){
+
+.cuerpoTercerNivel {
+  height: 100vh;  
+}
+
+}
+
 
 
 /*movil ordenador guantes*/
@@ -604,7 +589,7 @@
     .cuerpoTercerNivel{
         width: 100%;
         justify-content: center;  
-        margin-top: 4em;
+        margin-top: 5em;
     }
 
     .contenidoPrincipalTercerNivel{
